@@ -1,0 +1,216 @@
+
+/* Mobile-first style */
+* {
+    margin: 0; /* Supprime les marges par défaut de tous les éléments */
+    padding: 0; /* Supprime les espacements internes par défaut de tous les éléments */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur et la hauteur des éléments */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Définit la police de caractère pour tout le texte dans le corps du document */
+    line-height: 1.6; /* Définit l'interligne pour le texte */
+}
+
+.container {
+    width: 90%; /* Définit la largeur du conteneur à 90% de son parent */
+    margin: auto; /* Centre le conteneur horizontalement */
+    overflow: hidden; /* Cache tout contenu qui dépasse du conteneur */
+}
+
+header {
+    background-color: #c86d35; /* Définit la couleur de fond de l'en-tête */
+    color: #fff; /* Définit la couleur du texte dans l'en-tête */
+    padding: 1rem 0; /* Ajoute un espacement interne en haut et en bas */
+    position: fixed; /* Fixe l'en-tête en haut de la fenêtre du navigateur */
+    width: 100%; /* Définit la largeur de l'en-tête à 100% de la fenêtre */
+    top: 0; /* Positionne l'en-tête en haut de la fenêtre */
+    z-index: 1000; /* Assure que l'en-tête reste au-dessus des autres éléments */
+}
+
+header .container {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    justify-content: space-between; /* Répartit les éléments enfants avec de l'espace entre eux */
+    align-items: center; /* Centre les éléments enfants verticalement */
+    flex-direction: column; /* Dispose les éléments enfants en colonne */
+}
+
+header h1 {
+    text-align: center; /* Centre le texte du titre */
+    margin-bottom: 0.5rem; /* Ajoute un espacement en bas du titre */
+}
+
+nav ul {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    justify-content: center; /* Centre les éléments de la liste horizontalement */
+    list-style: none; /* Supprime les puces de la liste */
+}
+
+nav ul li {
+	margin: 0 1rem; /* Ajoute un espacement horizontal entre les éléments de la liste */
+}
+
+nav ul li a {
+    color: #fff; /* Définit la couleur du texte des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    font-size: 1rem; /* Définit la taille de la police des liens */
+}
+
+#hero {
+    background: url("../img/hero.jpg") no-repeat center center; /* Définit une image de fond qui ne se répète pas et est centrée */
+    background-size: cover; /* Redimensionne l'image de fond pour couvrir tout l'élément */
+    color: #fff; /* Définit la couleur du texte */
+    height: 60vh; /* Définit la hauteur de la section héro */
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    align-items: center; /* Centre les éléments enfants verticalement */
+    justify-content: center; /* Centre les éléments enfants horizontalement */
+    text-align: center; /* Centre le texte */
+    margin-top: 90px; /* Ajoute un espacement en haut de la section héro */
+}
+
+#hero h2 {
+    font-size: 1.8rem; /* Définit la taille de la police du titre */
+    margin-bottom: 1rem; /* Ajoute un espacement en bas du titre */
+}
+
+#hero p {
+    font-size: 1.1rem; /* Définit la taille de la police du paragraphe */
+    margin-bottom: 1rem; /* Ajoute un espacement en bas du paragraphe */
+}
+
+#hero .btn {
+	display: inline-block; /* Affiche le bouton comme un élément en ligne */
+    padding: 0.4rem 0.8rem; /* Ajoute un espacement interne au bouton */
+    background: #ff6347; /* Définit la couleur de fond du bouton */
+    color: #fff; /* Définit la couleur du texte du bouton */
+    text-decoration: none; /* Supprime le soulignement du texte du bouton */
+    border-radius: 5px; /* Arrondit les coins du bouton */
+}
+
+section {
+	padding: 2rem 0; /* Ajoute un espacement interne en haut et en bas des sections */
+}
+
+section h2 {
+    text-align: center; /* Centre le texte du titre de la section */
+    margin-bottom: 1rem; /* Ajoute un espacement en bas du titre */
+    font-size: 1.8rem; /* Définit la taille de la police du titre */
+}
+
+section p {
+    text-align: center; /* Centre le texte du paragraphe */
+    margin-bottom: 1rem; /* Ajoute un espacement en bas du paragraphe */
+    font-size: 1.2rem; /* Définit la taille de la police du paragraphe */
+}
+
+footer {
+    background-color: #c86d35; /* Définit la couleur de fond du pied de page */
+    color: #fff; /* Définit la couleur du texte du pied de page */
+    text-align: center; /* Centre le texte du pied de page */
+    padding: 1rem 0; /* Ajoute un espacement interne en haut et en bas du pied de page */
+}
+
+.menu-items {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    flex-direction: column; /* Dispose les éléments enfants en colonne */
+    align-items: center; /* Centre les éléments enfants horizontalement */
+}
+
+.menu-item {
+    margin: 1rem 0; /* Ajoute un espacement vertical entre les éléments du menu */
+    text-align: center; /* Centre le texte des éléments du menu */
+}
+
+.menu-item img {
+    width: 100%; /* Définit la largeur de l'image à 100% de son conteneur */
+    height: auto; /* Ajuste la hauteur de l'image proportionnellement */
+    border-radius: 5px; /* Arrondit les coins de l'image */
+}
+
+.contact-content {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    flex-direction: column; /* Dispose les éléments enfants en colonne */
+}
+
+.contact-info,
+.contact-form {
+    flex: 1; /* Permet aux éléments de grandir pour remplir l'espace disponible */
+    margin-bottom: 1rem; /* Ajoute un espacement en bas des éléments */
+}
+
+form {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    flex-direction: column; /* Dispose les éléments enfants en colonne */
+    gap: 1rem; /* Ajoute un espacement vertical entre les éléments du formulaire */
+}
+
+.form-group {
+    display: flex; /* Utilise Flexbox pour la mise en page */
+    flex-direction: column; /* Dispose les éléments enfants en colonne */
+}
+
+.form-group label {
+	margin-bottom: 0.5rem; /* Ajoute un espacement en bas des étiquettes */
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.5rem; /* Ajoute un espacement interne aux champs de saisie */
+    font-size: 1rem; /* Définit la taille de la police des champs de saisie */
+    border: 1px solid #ccc; /* Ajoute une bordure aux champs de saisie */
+    border-radius: 5px; /* Arrondit les coins des champs de saisie */
+}
+
+button[type="submit"] {
+    padding: 0.5rem; /* Ajoute un espacement interne au bouton de soumission */
+    background: #ff6347; /* Définit la couleur de fond du bouton de soumission */
+    color: #fff; /* Définit la couleur du texte du bouton de soumission */
+    border: none; /* Supprime la bordure du bouton de soumission */
+    border-radius: 5px; /* Arrondit les coins du bouton de soumission */
+    font-size: 1rem; /* Définit la taille de la police du bouton de soumission */
+    cursor: pointer; /* Change le curseur en pointeur au survol du bouton */
+}
+
+button[type="submit"]:hover {
+    background: #e55342; /* Change la couleur de fond du bouton de soumission au survol */
+}
+
+/* Styles pour les ordinateurs de bureau - Appliqués lorsque la largeur de l'écran est de 1024px ou plus */
+@media (min-width: 1024px) {
+    .container {
+        width: 80%; /* Ajuste la largeur du conteneur */
+    }
+
+    header .container {
+        flex-direction: row; /* Dispose les éléments enfants en ligne */
+    }
+
+    nav ul {
+        justify-content: flex-end; /* Aligne les éléments de la liste à la fin du conteneur */
+    }
+
+    #hero {
+        height: 70vh; /* Ajuste la hauteur de la section héro */
+    }
+
+    .menu-items {
+        flex-direction: row; /* Dispose les éléments enfants en ligne */
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+        justify-content: space-around; /* Répartit les éléments avec de l'espace autour d'eux */
+    }
+
+    .menu-item {
+        width: 30%; /* Ajuste la largeur des éléments du menu */
+        margin: 1rem; /* Ajoute un espacement autour des éléments du menu */
+    }
+
+    .contact-content {
+        flex-direction: row; /* Dispose les éléments enfants en ligne */
+        gap: 2rem; /* Ajoute un espacement horizontal entre les éléments */
+        align-items: center; /* Centre les éléments enfants verticalement */
+    }
+
+    .contact-info,
+    .contact-form {
+        flex: 1; /* Permet aux éléments de grandir pour remplir l'espace disponible */
+    }
+}
